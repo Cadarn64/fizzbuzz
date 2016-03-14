@@ -13,14 +13,14 @@ class Fizzbuzz
     end
    
     def find_answer(number)
-    	if is_divisable_by_three(number)
+
+    	if is_divisable_by_three_and_five(number)
+    		"fizzbuzz"
+    	elsif is_divisable_by_three(number)
     		"fizz"
     	elsif is_divisable_by_five(number)
     		"buzz"
-
-
     	end
-
 
     end
 end
