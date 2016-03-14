@@ -43,6 +43,16 @@ describe "Fizzbuzz" do
     	expect(fizzbuzz.find_answer(4)).not_to eq "fizz"
     end
 
+    it "should return buzz when the number is diviable by five" do
+    	fizzbuzz = Fizzbuzz.new
+    	expect(fizzbuzz.find_answer(5)).to eq "buzz"
+    end
+
+    it "should not return buzz if not divisable by five" do
+    	fizzbuzz = Fizzbuzz.new
+    	expect(fizzbuzz.find_answer(6)).not_to eq "buzz"
+    end
 
 end
+
 
